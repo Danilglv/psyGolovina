@@ -37,6 +37,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
 
+define("FS_METHOD","direct");
+
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
@@ -87,4 +89,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once( ABSPATH . 'wp-settings.php' );
-
