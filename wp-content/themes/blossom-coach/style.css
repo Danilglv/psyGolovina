@@ -2590,8 +2590,9 @@ body:not(.home) header.site-header {
 }
 
 .site-title {
-    font-size: 45px;
-    font-weight: 700;
+    font-family: 'AlexandraZeferinoOne', sans-serif !important;
+    font-size: 70px !important;
+    font-weight: 200 !important;
     margin: 0;
     line-height: 1;
 }
@@ -2609,10 +2610,11 @@ body:not(.home) header.site-header {
 }
 
 .main-header .menu-wrap {
+    width: 60%;
     display: inline-block;
     vertical-align: middle;
-    text-align: right;
-    float: right;
+    text-align: center;
+    margin: auto;
 }
 
 .menu-wrap nav.main-navigation {
@@ -7564,7 +7566,7 @@ RESPONSIVE STYLESHEET
     }
 
     .site-title-wrap .site-title {
-        font-size: 45px;
+        font-size: 55px;
     }
     .site-title-wrap .site-description {
         font-size: 14px;
@@ -8814,4 +8816,9 @@ RESPONSIVE STYLESHEET
         margin-bottom: 0;
         padding-bottom: 0;
     }
+}
+@font-face {
+    font-family: AlexandraZeferinoOne;
+    src: url(fonts/AlexandraZeferinoOne.ttf);
+    font-weight: normal;
 }
