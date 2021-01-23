@@ -91,7 +91,7 @@ if( ! function_exists( 'blossom_coach_get_footer_copyright' ) ) :
  * Footer Copyright
 */
 function blossom_coach_get_footer_copyright(){
-    $copyright = get_theme_mod( 'footer_copyright' );
+    // $copyright = get_theme_mod( 'footer_copyright' );
     echo '<span>';
     if( $copyright ){
         echo wp_kses_post( $copyright );
@@ -99,7 +99,7 @@ function blossom_coach_get_footer_copyright(){
         esc_html_e( '&copy; Copyright ', 'blossom-coach' );
         echo date_i18n( esc_html__( 'Y', 'blossom-coach' ) );
         echo ' <a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>. ';
-        esc_html_e( 'All Rights Reserved. ', 'blossom-coach' );
+        esc_html_e( '', 'blossom-coach' );
     }
     echo '</span>'; 
 }

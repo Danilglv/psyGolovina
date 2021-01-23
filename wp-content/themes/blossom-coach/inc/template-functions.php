@@ -641,9 +641,10 @@ function blossom_coach_footer_bottom(){ ?>
 			<div class="copyright">            
             <?php
                 blossom_coach_get_footer_copyright();
-                echo esc_html__( ' Blossom Coach | Developed By ', 'blossom-coach' );                
-                echo '<a href="' . esc_url( 'https://blossomthemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Blossom Themes', 'blossom-coach' ) . '</a>.' ;                
-                printf( esc_html__( ' Powered by %s', 'blossom-coach' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'blossom-coach' ) ) .'" target="_blank">WordPress</a>.' );
+                echo esc_html__( ' ', 'blossom-coach' );
+                echo '<a href="' . esc_url( 'https://golovina.site' ) . '">Политика конфеденциальности </a>';
+                // echo '<a href="' . esc_url( 'https://blossomthemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Blossom Themes', 'blossom-coach' ) . '</a>.' ;                
+                // printf( esc_html__( ' Powered by %s', 'blossom-coach' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'blossom-coach' ) ) .'" target="_blank">WordPress</a>.' );
                 if ( function_exists( 'the_privacy_policy_link' ) ) {
                     the_privacy_policy_link();
                 }
